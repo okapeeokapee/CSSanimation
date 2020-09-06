@@ -6,13 +6,20 @@ body {
     width: 100px;
     height: 100px;
     background: orange;
-    transition-property: transform,background;
-    transition-duration: 1s;
-    /* transform-origin: top left; */
-}
 
-.box:hover {
-    transform: translateX(30px);
-    background: skyblue;
-    /* transform: scale(.5, 2); */
-}
+    animation-name: move;
+    animation-duration: 2s;
+    }
+
+    @keyframes move{
+        0%{
+            transform: none;
+        }
+        80%{
+            transform: translateX(200px) rotate(360deg);
+        }
+        100%{
+            transform: translateX(300px) rotate(360deg);
+        }
+    }
+
