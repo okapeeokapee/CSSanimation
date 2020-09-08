@@ -14,6 +14,26 @@ body {
 .btn:hover{
     background: hsl(200, 100%, 45%);
 }
+
+.loading{
+    width: 40px;
+    height: 40px;
+    border: 8px solid #ccc;
+    border-right-color: transparent;
+    border-radius: 50%;
+
+    animation: spin .8s infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .box {
     width: 100px;
     height: 100px;
