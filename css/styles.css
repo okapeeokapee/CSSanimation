@@ -1,19 +1,25 @@
 body {
     padding: 64px;
 }
+.btn{
+    padding: 16px 32px;
+    background: hsl(200, 100%, 40%);
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: background .3s;
+}
 
+.btn:hover{
+    background: hsl(200, 100%, 45%);
+}
 .box {
     width: 100px;
     height: 100px;
     background: orange;
 
-    animation-name: move;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    /* animation-direction: alternate; */
-    /* animation-direction: reverse; */
-    /* animation-direction: alternate-reverse; */
-    /* animation-timing-function: linear; */
+    animation: move 2s infinite 1s;
     }
 
     @keyframes move{
